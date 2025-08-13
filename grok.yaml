@@ -203,10 +203,10 @@ rule-providers:
     path: "./ruleset/MetaCubeX/microsoft.yaml"
 
 rules:
-  - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连",
-  - "DOMAIN-SUFFIX,lijieapp.com,🐬 自定义直连",
-  - "DOMAIN-SUFFIX,oracle.com,🐬 自定义直连",
-  - "IP-CIDR,161.118.229.137/32,🐬 自定义直连",
+  - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连"
+  - "DOMAIN-SUFFIX,lijieapp.com,🐬 自定义直连"
+  - "DOMAIN-SUFFIX,oracle.com,🐬 自定义直连"
+  - "IP-CIDR,161.118.229.137/32,🐬 自定义直连"
   - "IP-CIDR,168.138.190.24/32,🐬 自定义直连"
   - "PROCESS-NAME,dota2.exe,🐬 自定义直连"
   - "PROCESS-NAME,steam.exe,🐬 自定义直连"
