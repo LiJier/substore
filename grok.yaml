@@ -212,6 +212,7 @@ rules:
   - "PROCESS-NAME,steam.exe,🐬 自定义直连"
   - "RULE-SET,customdirect,🐬 自定义直连"
   - "RULE-SET,customproxy,🐳 自定义代理"
+  - "DOMAIN-SUFFIX,githubusercontent.com,🔰 模式选择"
   - "DOMAIN-SUFFIX,googleapis.cn,🔰 模式选择"
   - "DOMAIN-SUFFIX,gstatic.com,🔰 模式选择"
   - "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 模式选择"
