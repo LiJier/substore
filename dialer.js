@@ -3,19 +3,26 @@
 
 function main({ proxies }) {
   // 需要匹配的关键词，可自行添加
-  const keywords = [/落地/i, /家宽/i, /oracle/i];
+  const keywords = [/落地/i, /家宽/i];
+  const newProxies = [];
 
   for (const proxy of proxies) {
+    // 将原始代理添加到新列表中（保持不变）
+    newProxies.push(proxy);
+
     if (!proxy.name) continue;
     // 检查是否匹配关键词
     if (keywords.some(reg => reg.test(proxy.name))) {
-      // 避免重复添加
-      if (!proxy["dialer-proxy"]) {
-        proxy["dialer-proxy"] = "⚙️ 节点选择";
-      }
+      // 创建一个新的代理对象，复制原始代理的所有属性
+      const newProxy = { ...proxy };
+      // 为新代理添加 dialer-proxy 属性
+      newProxy["dialer-proxy"] = "⚙️ 节点选择";
+      newProxy["name"] = proxy.name + "中转";
+      // 将新代理添加到列表中
+      newProxies.push(newProxy);
     }
   }
 
-  // 返回对象，Sub-Store 会自动合成最终 YAML
-  return { proxies };
+  // 返回包含原始代理和新增代理的对象
+  return { proxies: newProxies };
 }

@@ -1,7 +1,7 @@
 # Substore 兼容配置文件，基于 Mihomo Party 脚本改编
 # 保留 DNS、规则提供者、规则和代理组结构
 # 移除静态节点，依赖 Substore 订阅提供节点
-# 落地节点筛选规则：节点名称包含“落地”、“家宽”、“oracle”，通过组级 dialer-proxy 实现链式代理
+# 落地节点筛选规则：节点名称包含“落地”、“家宽”，通过组级 dialer-proxy 实现链式代理
 # 注意：若链式代理未生效，需在 Substore 中为筛选出的落地节点（名称含“落地”或“家宽”）添加节点级 dialer-proxy: ⚙️ 节点选择
 
 dns:
@@ -270,7 +270,7 @@ proxy-groups:
       - "⚖️ 负载均衡(散列)"
       - "☁️ 负载均衡(轮询)"
     include-all: true
-    exclude-filter: "(?i)落地|家宽|oracle"
+    exclude-filter: "(?i)落地|家宽"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -282,7 +282,7 @@ proxy-groups:
   - name: "🕊️ 落地节点"
     type: select
     include-all: true
-    filter: "(?i)落地|家宽|oracle"
+    filter: "(?i)落地|家宽"
     dialer-proxy: "⚙️ 节点选择"
     interval: 3600
     timeout: 3000
@@ -296,7 +296,7 @@ proxy-groups:
     type: url-test
     tolerance: 50
     include-all: true
-    exclude-filter: "(?i)落地|家宽|oracle"
+    exclude-filter: "(?i)落地|家宽"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -308,7 +308,7 @@ proxy-groups:
   - name: "🚑 故障转移"
     type: fallback
     include-all: true
-    exclude-filter: "(?i)落地|家宽|oracle"
+    exclude-filter: "(?i)落地|家宽"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -321,7 +321,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing
     include-all: true
-    exclude-filter: "(?i)落地|家宽|oracle"
+    exclude-filter: "(?i)落地|家宽"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -334,7 +334,7 @@ proxy-groups:
     type: load-balance
     strategy: round-robin
     include-all: true
-    exclude-filter: "(?i)落地|家宽|oracle"
+    exclude-filter: "(?i)落地|家宽"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
