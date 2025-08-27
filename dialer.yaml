@@ -276,6 +276,19 @@ proxy-groups:
     hidden: false
     icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/adjust.svg"
 
+  - name: "♻️ 延迟选优"
+    type: url-test
+    tolerance: 50
+    include-all: true
+    exclude-filter: "(?i)落地|家宽"
+    interval: 3600
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/speed.svg"
+
   - name: "🕊️ 落地节点"
     type: select
     proxies:
@@ -289,19 +302,6 @@ proxy-groups:
     max-failed-times: 3
     hidden: false
     icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/openwrt.svg"
-
-  - name: "♻️ 延迟选优"
-    type: url-test
-    tolerance: 50
-    include-all: true
-    exclude-filter: "(?i)落地|家宽"
-    interval: 3600
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/speed.svg"
 
   - name: "♻️ 落地选优"
     type: url-test
