@@ -270,7 +270,6 @@ proxy-groups:
       - "⚖️ 负载均衡(散列)"
       - "☁️ 负载均衡(轮询)"
     include-all: true
-    exclude-filter: "(?i)落地|家宽|oracle"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
