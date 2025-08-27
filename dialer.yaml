@@ -319,45 +319,6 @@ proxy-groups:
     hidden: false
     icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/speed.svg"
 
-
-  - name: "🚑 故障转移"
-    type: fallback
-    include-all: true
-    exclude-filter: "(?i)落地|家宽"
-    interval: 3600
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/ambulance.svg"
-
-  - name: "⚖️ 负载均衡(散列)"
-    type: load-balance
-    strategy: consistent-hashing
-    include-all: true
-    exclude-filter: "(?i)落地|家宽"
-    interval: 3600
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/merry_go.svg"
-
-  - name: "☁️ 负载均衡(轮询)"
-    type: load-balance
-    strategy: round-robin
-    include-all: true
-    exclude-filter: "(?i)落地|家宽"
-    interval: 3600
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-    icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/balance.svg"
-
   - name: "🌍 国外媒体"
     type: select
     proxies:
