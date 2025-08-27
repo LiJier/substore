@@ -209,6 +209,7 @@ rules:
   - "DOMAIN-SUFFIX,oracle.com,🐬 自定义直连"
   - "IP-CIDR,161.118.229.137/32,🐬 自定义直连"
   - "IP-CIDR,168.138.190.24/32,🐬 自定义直连"
+  - "DOMAIN-SUFFIX,imgur.com,🎨 imgur"
   - "PROCESS-NAME,dota2.exe,🐬 自定义直连"
   - "PROCESS-NAME,steam.exe,🐬 自定义直连"
   - "RULE-SET,customdirect,🐬 自定义直连"
@@ -491,6 +492,26 @@ proxy-groups:
     max-failed-times: 3
     hidden: false
     icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/microsoft.svg"
+
+  - name: "🎨 imgur"
+    type: select
+    proxies:
+      - "🔰 模式选择"
+      - "⚙️ 节点选择"
+      - "🕊️ 落地节点"
+      - "🔗 全局直连"
+      - "♻️ 延迟选优"
+      - "🚑 故障转移"
+      - "⚖️ 负载均衡(散列)"
+      - "☁️ 负载均衡(轮询)"
+    include-all: true
+    interval: 3600
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://s.imgur.com/images/favicon-32x32.png"
 
   - name: "🥰 广告过滤"
     type: select
