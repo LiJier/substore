@@ -42,6 +42,9 @@ dns:
       - "https://223.5.5.5/dns-query"
       - "https://doh.pub/dns-query"
 
+tun:
+  endpoint-independent-nat: true
+
 rule-providers:
   reject:
     type: http
