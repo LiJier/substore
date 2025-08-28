@@ -17,7 +17,7 @@ function main({ proxies }) {
       const newProxy = { ...proxy };
       // 为新代理添加 dialer-proxy 属性
       newProxy["dialer-proxy"] = "⚙️ 节点选择";
-      newProxy["name"] = "中转 " + proxy.name;
+      newProxy["name"] = "链式代理 " + proxy.name;
       // 将新代理添加到列表中
       newProxies.push(newProxy);
     }
