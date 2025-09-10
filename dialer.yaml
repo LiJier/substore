@@ -141,6 +141,13 @@ rule-providers:
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: "./ruleset/loyalsoldier/lancidr.yaml"
+  applications:
+    type: http
+    format: yaml
+    interval: 86400
+    behavior: classical
+    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    path: "./ruleset/loyalsoldier/applications.yaml"
   openai:
     type: http
     format: yaml
@@ -199,6 +206,10 @@ rule-providers:
     path: "./ruleset/MetaCubeX/microsoft.yaml"
 
 rules:
+  - "PROCESS-NAME,aria2,🔰 模式选择"
+  - "PROCESS-NAME,aria2.exe,🔰 模式选择"
+  - "PROCESS-NAME,aria2c,🔰 模式选择"
+  - "PROCESS-NAME,aria2c.exe,🔰 模式选择"
   - "DOMAIN-SUFFIX,nxza.de,🐬 自定义直连"
   - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连"
   - "DOMAIN-SUFFIX,lijieapp.com,🐬 自定义直连"
@@ -209,6 +220,10 @@ rules:
   - "PROCESS-NAME,steam.exe,🐬 自定义直连"
   - "RULE-SET,customdirect,🐬 自定义直连"
   - "RULE-SET,customproxy,🐳 自定义代理"
+  - "PROCESS-NAME,aria2,🐳 自定义代理"
+  - "PROCESS-NAME,aria2.exe,🐳 自定义代理"
+  - "PROCESS-NAME,aria2c,🐳 自定义代理"
+  - "PROCESS-NAME,aria2c.exe,🐳 自定义代理"
   - "DOMAIN-SUFFIX,githubusercontent.com,🔰 模式选择"
   - "DOMAIN-SUFFIX,googleapis.cn,🔰 模式选择"
   - "DOMAIN-SUFFIX,gstatic.com,🔰 模式选择"
@@ -222,6 +237,7 @@ rules:
   - "RULE-SET,google-gemini,💸 ChatGPT-Gemini-XAI-Perplexity"
   - "RULE-SET,xai,💸 ChatGPT-Gemini-XAI-Perplexity"
   - "RULE-SET,perplexity,💸 ChatGPT-Gemini-XAI-Perplexity"
+  - "RULE-SET,applications,🔗 全局直连"
   - "RULE-SET,private,🔗 全局直连"
   - "RULE-SET,reject,🥰 广告过滤"
   - "RULE-SET,microsoft,Ⓜ️ 微软服务"

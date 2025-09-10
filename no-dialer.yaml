@@ -197,6 +197,10 @@ rule-providers:
     path: "./ruleset/MetaCubeX/microsoft.yaml"
 
 rules:
+  - "PROCESS-NAME,aria2,🔰 模式选择"
+  - "PROCESS-NAME,aria2.exe,🔰 模式选择"
+  - "PROCESS-NAME,aria2c,🔰 模式选择"
+  - "PROCESS-NAME,aria2c.exe,🔰 模式选择"
   - "DOMAIN-SUFFIX,nxza.de,🐬 自定义直连"
   - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连"
   - "DOMAIN-SUFFIX,lijieapp.com,🐬 自定义直连"
