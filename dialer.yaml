@@ -222,7 +222,6 @@ rules:
   - "RULE-SET,google-gemini,💸 ChatGPT-Gemini-XAI-Perplexity"
   - "RULE-SET,xai,💸 ChatGPT-Gemini-XAI-Perplexity"
   - "RULE-SET,perplexity,💸 ChatGPT-Gemini-XAI-Perplexity"
-  - "RULE-SET,applications,🔗 全局直连"
   - "RULE-SET,private,🔗 全局直连"
   - "RULE-SET,reject,🥰 广告过滤"
   - "RULE-SET,microsoft,Ⓜ️ 微软服务"
