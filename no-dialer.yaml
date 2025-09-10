@@ -139,13 +139,6 @@ rule-providers:
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: "./ruleset/loyalsoldier/lancidr.yaml"
-  applications:
-    type: http
-    format: yaml
-    interval: 86400
-    behavior: classical
-    url: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-    path: "./ruleset/loyalsoldier/applications.yaml"
   openai:
     type: http
     format: yaml
@@ -214,10 +207,6 @@ rules:
   - "PROCESS-NAME,steam.exe,🐬 自定义直连"
   - "RULE-SET,customdirect,🐬 自定义直连"
   - "RULE-SET,customproxy,🐳 自定义代理"
-  - "PROCESS-NAME,aria2,🐳 自定义代理"
-  - "PROCESS-NAME,aria2.exe,🐳 自定义代理"
-  - "PROCESS-NAME,aria2c,🐳 自定义代理"
-  - "PROCESS-NAME,aria2c.exe,🐳 自定义代理"
   - "DOMAIN-SUFFIX,githubusercontent.com,🔰 模式选择"
   - "DOMAIN-SUFFIX,googleapis.cn,🔰 模式选择"
   - "DOMAIN-SUFFIX,gstatic.com,🔰 模式选择"
