@@ -199,7 +199,6 @@ rule-providers:
     path: "./ruleset/MetaCubeX/microsoft.yaml"
 
 rules:
-  - "DOMAIN-SUFFIX,juejin.im,🐬 自定义直连"
   - "DOMAIN-SUFFIX,nxza.de,🐬 自定义直连"
   - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连"
   - "DOMAIN-SUFFIX,lijieapp.com,🐬 自定义直连"
