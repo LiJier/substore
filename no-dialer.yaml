@@ -197,6 +197,7 @@ rule-providers:
     path: "./ruleset/MetaCubeX/microsoft.yaml"
 
 rules:
+  - "DOMAIN-SUFFIX,linux.do,🐳 自定义代理"
   - "DOMAIN-KEYWORD,microsoft,🐬 自定义直连"
   - "DOMAIN-KEYWORD,phone,🐬 自定义直连"
   - "DOMAIN-SUFFIX,live.com,🐬 自定义直连"
