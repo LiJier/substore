@@ -198,9 +198,8 @@ rule-providers:
 
 rules:
   - "DOMAIN,dcg.microsoft.com,🐬 自定义直连"
-  - "DOMAIN-SUFFIX,nxza.de,🐬 自定义直连"
+  - "DOMAIN-SUFFIX,ljie.de,🐬 自定义直连"
   - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连"
-  - "DOMAIN-SUFFIX,lijieapp.com,🐬 自定义直连"
   - "DOMAIN-SUFFIX,oracle.com,🐬 自定义直连"
   - "IP-CIDR,161.118.229.137/32,🐬 自定义直连"
   - "IP-CIDR,168.138.190.24/32,🐬 自定义直连"
