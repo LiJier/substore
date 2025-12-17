@@ -3,7 +3,7 @@
 
 function main({ proxies }) {
   // 需要匹配的关键词，可自行添加
-  const keywords = [/落地/i, /家宽/i];
+  const keywords = [/SG/i];
   // 需要排除的关键词
   const excludeKeywords = [/reality/i];
   const newProxies = [];
