@@ -230,6 +230,7 @@ rules:
   - "RULE-SET,apple,🍎 苹果服务"
   - "RULE-SET,google,📢 谷歌服务"
   - "DOMAIN-SUFFIX,imgur.com,🎨 imgur"
+  - "DOMAIN-SUFFIX,binance.com,币安"
   - "RULE-SET,proxy,🔰 模式选择"
   - "RULE-SET,gfw,🔰 模式选择"
   - "RULE-SET,tld-not-cn,🔰 模式选择"

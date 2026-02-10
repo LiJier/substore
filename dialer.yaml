@@ -253,6 +253,23 @@ proxy-groups:
     hidden: false
     icon: "https://s.imgur.com/images/favicon-32x32.png"
 
+  - name: "币安"
+    type: select
+    proxies:
+      - "🔰 模式选择"
+      - "⚙️ 节点选择"
+      - "🕊️ 落地节点"
+      - "🔗 全局直连"
+      - "♻️ 延迟选优"
+      - "♻️ 落地选优"
+    include-all: true
+    interval: 3600
+    timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+
   - name: "🥰 广告过滤"
     type: select
     proxies:
