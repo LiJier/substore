@@ -23,7 +23,7 @@ proxy-groups:
     proxies:
       - "♻️ 延迟选优"
     include-all: true
-    exclude-filter: "(?i)SG"
+    exclude-filter: "(?i)LJ SG"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -36,7 +36,7 @@ proxy-groups:
     type: url-test
     tolerance: 50
     include-all: true
-    exclude-filter: "(?i)SG"
+    exclude-filter: "(?i)LJ SG"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -50,7 +50,7 @@ proxy-groups:
     proxies:
       - "♻️ 落地选优"
     include-all: true
-    filter: "(?i)SG"
+    filter: "(?i)LJ SG"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
@@ -63,7 +63,7 @@ proxy-groups:
     type: url-test
     tolerance: 50
     include-all: true
-    filter: "(?i)SG"
+    filter: "(?i)LJ SG"
     interval: 3600
     timeout: 3000
     url: "https://www.google.com/generate_204"
