@@ -196,6 +196,7 @@ rule-providers:
     path: "./ruleset/MetaCubeX/microsoft.yaml"
 
 rules:
+  - "DOMAIN,anyrouter.top,🔰 模式选择"
   - "DOMAIN,dcg.microsoft.com,🐬 自定义直连"
   - "DOMAIN-SUFFIX,ljie.de,🔰 模式选择"
   - "DOMAIN-SUFFIX,379278.xyz,🐬 自定义直连"
