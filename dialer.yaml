@@ -235,23 +235,6 @@ proxy-groups:
     hidden: false
     icon: "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/refs/heads/main/docs/assets/icons/microsoft.svg"
 
-  - name: "NAS"
-    type: select
-    proxies:
-      - "🔰 模式选择"
-      - "⚙️ 节点选择"
-      - "🕊️ 落地节点"
-      - "🔗 全局直连"
-      - "♻️ 延迟选优"
-      - "♻️ 落地选优"
-    include-all: true
-    interval: 3600
-    timeout: 3000
-    url: "https://www.google.com/generate_204"
-    lazy: true
-    max-failed-times: 3
-    hidden: false
-
   - name: "🎨 imgur"
     type: select
     proxies:
